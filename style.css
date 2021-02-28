@@ -17,6 +17,10 @@ body {
   font-size: 16px;
 }
 
+.close {
+  display: none;
+}
+
 .fab.fa-instagram {
   font-size: 3rem;
   color: #0a6bb5;
@@ -26,6 +30,11 @@ body {
   font-size: 4rem;
 }
 
+.fab.fa-instagram.small {
+  font-size: 2.4rem;
+  margin-right: 20px;
+}
+
 .fab.fa-line {
   font-size: 3rem;
   color: #0a6bb5;
@@ -33,6 +42,10 @@ body {
 
 .fab.fa-line.large {
   font-size: 4rem;
+}
+
+.fab.fa-line.small {
+  font-size: 2.4rem;
 }
 
 .title {
@@ -191,7 +204,7 @@ body {
     width: 100%;
     height: 70px;
     padding: 0 20px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.8);
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -272,34 +285,77 @@ body {
 
 .drawer {
   width: 100%;
-  height: calc(100vh - 70px);
-  margin-top: 70px;
-  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.9) 35%, rgba(255, 255, 255, 0.9) 65%, transparent);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 20;
   display: none;
 }
 
 .drawer__container {
   width: 100%;
   height: 100%;
-  padding-top: 40px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
+.drawer__title {
+  width: 240px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.drawer__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .drawer__menu {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .drawer__link {
   font-size: 1.6rem;
   color: black;
+}
+
+.drawer__button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.drawer__button--line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  left: 8px;
+}
+
+.drawer__button--line.line1 {
+  top: 22px;
+  transform: rotate(45deg);
+}
+
+.drawer__button--line.line2 {
+  display: none;
+  top: 22px;
+}
+
+.drawer__button--line.line3 {
+  top: 22px;
+  transform: rotate(-45deg);
 }
 
 .fv {
