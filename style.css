@@ -17,8 +17,14 @@ body {
   font-size: 16px;
 }
 
-.close {
+.dn {
   display: none;
+}
+
+@media screen and (max-width: 549px) {
+  .sp-none {
+    display: none;
+  }
 }
 
 .fab.fa-instagram {
@@ -138,7 +144,7 @@ body {
 
 .header__link {
   font-size: 1.4rem;
-  color: black;
+  color: #000000;
 }
 
 .header__link:hover {
@@ -168,7 +174,7 @@ body {
   display: block;
   width: 30px;
   height: 2px;
-  background: black;
+  background: #0a6bb5;
   position: absolute;
   left: 8px;
 }
@@ -249,7 +255,7 @@ body {
   }
   .header__link {
     font-size: 1.4rem;
-    color: black;
+    color: #000000;
   }
   .header__link:hover {
     text-decoration: underline;
@@ -268,7 +274,7 @@ body {
     display: block;
     width: 30px;
     height: 2px;
-    background: black;
+    background: #0a6bb5;
     position: absolute;
     left: 8px;
   }
@@ -322,8 +328,8 @@ body {
 }
 
 .drawer__link {
-  font-size: 1.6rem;
-  color: black;
+  font-size: 1.8rem;
+  color: #000000;
 }
 
 .drawer__button {
@@ -338,7 +344,7 @@ body {
   display: block;
   width: 30px;
   height: 2px;
-  background: black;
+  background: #0a6bb5;
   position: absolute;
   left: 8px;
 }
@@ -451,12 +457,14 @@ body {
 
 .message__container {
   width: 500px;
+  width: 50%;
   padding: 20px 20px 20px 0;
   box-sizing: border-box;
 }
 
 .message__content {
   white-space: nowrap;
+  white-space: normal;
 }
 
 .message__content.wrap {
@@ -465,6 +473,7 @@ body {
 
 .message__imagebox {
   width: calc(100% - 500px);
+  width: 50%;
   height: auto;
   padding-left: 10px;
   box-sizing: border-box;
@@ -501,7 +510,7 @@ body {
   }
   .message__content {
     white-space: normal;
-    text-align: center;
+    text-align: start;
   }
   .message__content.wrap {
     white-space: normal;
@@ -516,6 +525,12 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .message__content {
+    text-align: start;
   }
 }
 
@@ -580,10 +595,11 @@ body {
   padding: 12px;
   margin: 0 auto;
   font-size: 1.6rem;
+  text-align: center;
   border: 1px solid;
   border-radius: 4px;
   background: #0a6bb5;
-  color: white;
+  color: #ffffff;
   position: relative;
 }
 
@@ -592,10 +608,10 @@ body {
   display: inline-block;
   width: 0;
   height: 0;
-  margin: 0 0 0 2em;
+  margin: 0 0 0 1.2em;
   border: 6px solid transparent;
   border-right: 0 solid transparent;
-  border-left: 8px solid white;
+  border-left: 8px solid #ffffff;
 }
 
 .btm--message {
@@ -645,7 +661,7 @@ body {
 }
 
 .btm--message__content {
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   margin-bottom: 20px;
   text-shadow: #00213a 1px 0 4px;
@@ -689,12 +705,12 @@ body {
     z-index: 3;
   }
   .btm--message__title {
-    color: white;
+    color: #ffffff;
     line-height: 1.4;
     text-shadow: #ffcc00 1px 0 10px;
   }
   .btm--message__content {
-    color: white;
+    color: #ffffff;
     margin-bottom: 20px;
     text-shadow: #00213a 1px 0 4px;
   }
@@ -767,6 +783,13 @@ body {
   }
 }
 
+@media screen and (max-width: 499px) {
+  .qa__question::after, .qa__question::before {
+    width: 12px;
+    right: 0;
+  }
+}
+
 .blog {
   width: 100%;
   padding: 60px 20px;
@@ -814,10 +837,11 @@ body {
   padding: 12px;
   margin: 0 auto;
   font-size: 1.6rem;
+  text-align: center;
   border: 1px solid;
   border-radius: 4px;
   background: #0a6bb5;
-  color: white;
+  color: #ffffff;
 }
 
 .blog__button:after {
@@ -825,10 +849,10 @@ body {
   display: inline-block;
   width: 0;
   height: 0;
-  margin: 0 0 0 2em;
+  margin: 0 0 0 1.2em;
   border: 6px solid transparent;
   border-right: 0 solid transparent;
-  border-left: 8px solid white;
+  border-left: 8px solid #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -890,10 +914,11 @@ body {
   width: 120px;
   padding: 12px;
   font-size: 1.6rem;
+  text-align: center;
   border: 1px solid;
   border-radius: 4px;
   background: #0a6bb5;
-  color: white;
+  color: #ffffff;
 }
 
 .about__button:after {
@@ -901,10 +926,10 @@ body {
   display: inline-block;
   width: 0;
   height: 0;
-  margin: 0 0 0 2em;
+  margin: 0 0 0 1.2em;
   border: 6px solid transparent;
   border-right: 0 solid transparent;
-  border-left: 8px solid white;
+  border-left: 8px solid #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -965,7 +990,7 @@ body {
 .footer__link {
   text-decoration: none;
   font-size: 1.4rem;
-  color: black;
+  color: #000000;
 }
 
 .footer__link:hover {
