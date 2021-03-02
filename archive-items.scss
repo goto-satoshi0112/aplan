@@ -1,0 +1,71 @@
+@import "variable";
+
+
+
+.fv {
+  width: 100%;
+  height: 310px;
+  margin-bottom: 60px;
+  background-image: url(img/main1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+  &__overlay {
+    width: 100%;
+    height: 310px;
+    background: $overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 3;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-align: center;  
+  }
+  &__subtitle {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+  
+  }
+}
+
+
+// 物件セクション
+.section {
+  width: 100%;
+  padding: 60px 20px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  &.pickups {
+    background: rgba(227, 227, 227, 0.2);
+  }
+  &__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section {
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

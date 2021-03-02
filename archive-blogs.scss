@@ -1,0 +1,171 @@
+@import "variable";
+
+
+
+
+.fv {
+  width: 100%;
+  height: 310px;
+  margin-bottom: 60px;
+  background-image: url(img/main1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+  &__overlay {
+    width: 100%;
+    height: 310px;
+    background: $under_overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 3;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-align: center;  
+  }
+  &__subtitle {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;  
+  }
+}
+
+
+// ブログセクション
+.blog {
+  width: 100%;
+  max-width: 900px;
+  padding: 60px 20px;
+  margin: 0 auto 60px;
+  box-sizing: border-box;
+  background: $wt;
+  display: flex;
+  &__cards {
+    width: calc(100% - 280px);
+    box-sizing: border-box;
+    margin-right: 40px;
+  }
+  &__card {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  &__inner {
+    width: 65%;
+    box-sizing: border-box;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    vertical-align: middle;
+    object-fit: cover;
+    border: 1px solid $main;
+  }
+  &__content {
+    padding: 10px 20px;
+  }
+  &__date {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    padding-left: 0;
+  }
+  &__title {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+  &__button {
+    display: block;
+    width: 120px;
+    padding: 12px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 4px;
+    background: $main;
+    color: $wt;
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin: 0 0 0 1.2em;
+      border: 6px solid transparent;
+      border-right: 0 solid transparent;
+      border-left: 8px solid $wt;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .blog {
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__card {
+      width: 45%;
+    }
+  }
+}
+@media screen and (max-width: 499px) {
+  .blog {
+    &__card {
+      width: 100%;
+    }
+  }
+}
+
+.new {
+  width: 240px;
+  &__title {
+    font-size: 1.6rem;
+    color: $wt;
+    padding: 10px 0 10px 10px;
+    border: 1px solid $main;
+    background: $main;
+    &:before {
+      display: inline-block;
+      content: "●";
+      margin-right: 8px;
+    }
+  }
+  &__list {
+    list-style: none;
+    border: 1px solid $main;
+    padding: 10px;
+  }
+  &__menu {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted;
+    &:before {
+      display: inline-block;
+      content: "▶︎";
+      margin-right: 8px;
+      font-size: 1.2rem;
+    }
+
+  }
+  &__link {
+    color: $bk;
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+}

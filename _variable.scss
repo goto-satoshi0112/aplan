@@ -28,8 +28,16 @@ $header: rgba(255, 255, 255, 0.8);
 // topfvoverlay
 $overlay: rgba(255, 255, 255, 0.3);
 
+// under_fv_overlay
+$under_overlay: linear-gradient(90deg, transparent 0%,  rgba(255, 255, 255, .8) 45%,   rgba(255, 255, 255, .8) 55%,transparent 100%);
+
+
+
 //section_bg
 $bg: rgba(227, 227, 227, 0.2);
+
+//bg_d
+$bg_d: rgba(227, 227, 227, 0.5);
 
 
 // セクションタイトル

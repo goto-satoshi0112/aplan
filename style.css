@@ -27,6 +27,22 @@ body {
   }
 }
 
+.pc-none {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pc-none {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .pc-none {
+    display: none;
+  }
+}
+
 .fab.fa-instagram {
   font-size: 3rem;
   color: #0a6bb5;
