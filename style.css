@@ -365,6 +365,10 @@ body {
   left: 8px;
 }
 
+.drawer__button--line:hover {
+  cursor: pointer;
+}
+
 .drawer__button--line.line1 {
   top: 22px;
   transform: rotate(45deg);
@@ -673,7 +677,6 @@ body {
 .btm--message__title {
   color: white;
   line-height: 1.4;
-  text-shadow: #ffcc00 1px 0 10px;
 }
 
 .btm--message__content {
@@ -723,7 +726,6 @@ body {
   .btm--message__title {
     color: #ffffff;
     line-height: 1.4;
-    text-shadow: #ffcc00 1px 0 10px;
   }
   .btm--message__content {
     color: #ffffff;

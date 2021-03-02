@@ -3,6 +3,8 @@ $(function () {
   // ドロワー
   $('.header__button').on('click', function () {
     $('html, body').css('position', 'fixed');
+    $('.fv').addClass("open");
+    $('.fv__box').addClass("open");
     $('.header').addClass("dn");
     $('.drawer').fadeIn();
     return false;
@@ -10,6 +12,8 @@ $(function () {
   $('.drawer__button').on('click', function () {
     $('.drawer').fadeOut();
     $('html, body').css('position', 'static');
+    $('.fv').removeClass("open");
+    $('.fv__box').removeClass("open");
     $('.header').removeClass("dn");
     return false;
   });

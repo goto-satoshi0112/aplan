@@ -330,6 +330,9 @@ body {
       background: $main;
       position: absolute;
       left: 8px;
+      &:hover {
+        cursor: pointer;
+      }
       &.line1 {
         top: 22px;
         transform: rotate(45deg);
@@ -628,7 +631,6 @@ body {
   &__title {
     color: white;
     line-height: 1.4;
-    text-shadow: $sub 1px 0 10px;
   }
   &__content {
     color: $wt;
@@ -676,7 +678,6 @@ body {
     &__title {
       color: $wt;
       line-height: 1.4;
-      text-shadow: $sub 1px 0 10px;
     }
     &__content {
       color: $wt;
