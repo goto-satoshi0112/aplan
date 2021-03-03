@@ -47,7 +47,6 @@
   }
 }
 
-
 // contactページ独自
 .middle {
   width: 100%;
@@ -97,6 +96,13 @@
     font-size: 2.4rem;
     text-align: center;
     padding: 20px 0;
+  }
+}
+@media (min-width: 767px) {
+  a[href*="tel:"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 499px) {
@@ -152,7 +158,7 @@
       text-align: center;
       padding: 20px 0;
     }
-  }  
+  }
 }
 
 .fa-phone {
@@ -165,3 +171,4 @@
   margin-right: 10px;
   color: $main;
 }
+
